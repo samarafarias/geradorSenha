@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>Gerador de senha</title>
+</head>
+<body>
+    <h1>Gerador de senha</h1>
+    <main class="container">
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="5" max="15" value="5">
+        <button id="button" class="btn" onclick="gerarSenha()">Gerar senha</button>
+    </main>
+
+    <div id="container-senha" onclick="copiarSenha()" class="container-senha hide">
+        <span id="title" class="title">Sua senha : </span>
+        <span id="senha" class="senha" > 1122225552 </span>
+        <span id="copiar" class="copiar">Clique na senha para copiar ⬆</span>
+    </div>
+</body>
+</html>
